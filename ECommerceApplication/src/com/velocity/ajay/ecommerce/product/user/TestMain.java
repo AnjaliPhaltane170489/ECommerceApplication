@@ -8,11 +8,13 @@ import java.util.Scanner;
 public class TestMain {
 
 	public static void main(String[] args) throws SQLException {
+		String userChoice;
+		Scanner scanner=null;
 		try {
 			createTable();
 		} catch (SQLException e) {
 			e.printStackTrace();
-		}
+		}do {
 		System.out.println("Welcome to E-Commerce based Application>>>");
 		System.out.println("Enter the Operation You want to perform>>>");
 		System.out.println("1:User Registration");
@@ -22,7 +24,7 @@ public class TestMain {
 		System.out.println("5:View Cart");
 		System.out.println("6:Purchase the Item");
 		System.out.println("ENter Your choice");
-		Scanner scanner = new Scanner(System.in);
+		scanner = new Scanner(System.in);
 		int ch = scanner.nextInt();
 		switch (ch) {
 		case 1:
@@ -33,7 +35,15 @@ public class TestMain {
 			UserLogin userLogin = new UserLogin();
 			userLogin.loginUser();
 			break;
+		case 3:
+			ViewProductItemsSortedOrder viewProductItemsSortedOrder=new ViewProductItemsSortedOrder();
+			viewProductItemsSortedOrder.viewProductItems();
+			break;
 		}
+		 System.out.println("Do you want to continue (Y/N)?");
+          userChoice = scanner.next(); 
+		}while (userChoice == "Y" || userChoice == "y");
+		
 	}
 
 	public static void createTable() throws SQLException {
@@ -42,6 +52,7 @@ public class TestMain {
 		ConnectionTest connectionTest1 = new ConnectionTest();
 		Connection connection = null;
 		Statement statement = null;
+		
 
 		try {
 			connection = connectionTest1.getConnection();
@@ -54,6 +65,7 @@ public class TestMain {
 		} finally {
 			connection.close();
 			statement.close();
+			
 		}
 	}
 }

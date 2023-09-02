@@ -1,4 +1,4 @@
-package com.velocity.ajay.ecommerce.product.admin;
+package com.velocity.ajay.ecommerce.product.user;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

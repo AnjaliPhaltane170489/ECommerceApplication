@@ -25,5 +25,8 @@ public class ProductDetails {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+		finally {
+			scanner.close();
+		}
 	}
 }
