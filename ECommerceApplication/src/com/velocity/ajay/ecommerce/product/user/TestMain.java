@@ -39,6 +39,11 @@ public class TestMain {
 			ViewProductItemsSortedOrder viewProductItemsSortedOrder=new ViewProductItemsSortedOrder();
 			viewProductItemsSortedOrder.viewProductItems();
 			break;
+			
+		case 4:
+			BuyProduct buyProduct=new BuyProduct();
+			buyProduct.userBuyProductDetails();
+			break;
 		}
 		 System.out.println("Do you want to continue (Y/N)?");
           userChoice = scanner.next(); 
