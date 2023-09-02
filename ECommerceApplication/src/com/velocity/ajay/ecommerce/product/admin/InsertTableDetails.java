@@ -1,4 +1,4 @@
-package com.velocity.ajay.ecommerce.admin;
+package com.velocity.ajay.ecommerce.product.admin;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

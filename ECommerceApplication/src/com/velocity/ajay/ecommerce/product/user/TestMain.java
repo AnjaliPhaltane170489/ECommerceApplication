@@ -1,4 +1,4 @@
-package com.velocity.ajay.ecommerce.shoping.product;
+package com.velocity.ajay.ecommerce.product.user;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -11,7 +11,6 @@ public class TestMain {
 		try {
 			createTable();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		System.out.println("Welcome to E-Commerce based Application>>>");
@@ -51,7 +50,6 @@ public class TestMain {
 			System.out.println("User Registration table created successfully");
 
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
 			connection.close();

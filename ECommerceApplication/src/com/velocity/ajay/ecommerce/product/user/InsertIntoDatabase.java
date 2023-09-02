@@ -1,4 +1,4 @@
-package com.velocity.ajay.ecommerce.shoping.product;
+package com.velocity.ajay.ecommerce.product.user;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -31,7 +31,6 @@ public class InsertIntoDatabase {
 			// step 5: Process the result:done internally
 
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
 			connection.close();

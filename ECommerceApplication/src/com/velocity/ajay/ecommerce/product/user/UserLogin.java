@@ -1,4 +1,4 @@
-package com.velocity.ajay.ecommerce.shoping.product;
+package com.velocity.ajay.ecommerce.product.user;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -34,7 +34,6 @@ public class UserLogin {
 			}
 
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
 			connection.close();

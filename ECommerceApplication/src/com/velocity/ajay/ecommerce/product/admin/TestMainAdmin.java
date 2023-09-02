@@ -1,4 +1,4 @@
-package com.velocity.ajay.ecommerce.admin;
+package com.velocity.ajay.ecommerce.product.admin;
 
 import java.sql.SQLException;
 import java.util.Scanner;
