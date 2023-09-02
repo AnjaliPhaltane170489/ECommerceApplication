@@ -43,8 +43,8 @@ public class BuyProduct {
 
                     if (purchaseChoice == 'Y' || purchaseChoice == 'y') {
                         // Perform the purchase
-                        // Here, you can update the quantity and perform other necessary operations
-                        // For example, decrement the quantity in the database and record the purchase
+                        // Here,  update the quantity and perform other necessary operations
+                       
 
                         // Update the product quantity 
                         String updateQuantityQuery = "UPDATE product SET quantity = ? WHERE product_id = ?";
