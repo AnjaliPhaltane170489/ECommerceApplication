@@ -1,6 +1,13 @@
-/.metadata/
+.metadata/
 /.recommenders/
 /.classpath
 /.project
 /.settings/
+.metadata/.plugins/org.eclipse.core.resources/0.snap
+.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
+.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/0.png
+.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/1.png
+.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log
+.metadata/version.ini
+
 

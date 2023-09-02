@@ -12,5 +12,9 @@ public class TestMain {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		System.out.println("Welcome to E-Commerce based Application>>>");
+		System.out.println("Enter the Operation You want to perform>>>");
+		int ch = 1;
+		// switch(ch)
 	}
 }
