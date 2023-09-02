@@ -26,7 +26,7 @@ public class UserRegistration {
 		InsertIntoDatabase insertIntoDatabase=new InsertIntoDatabase();
 		insertIntoDatabase.UserRegistration(fname, lastname, username, password, city, email, mobile);
 		
-		
+	
 		
 		
 	}
