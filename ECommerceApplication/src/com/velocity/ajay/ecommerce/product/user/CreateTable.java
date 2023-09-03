@@ -28,10 +28,4 @@ public class CreateTable {
 			statement.close();
 		}
 	}
-
-	public static void main(String[] args) throws SQLException {
-
-		CreateTable createTable = new CreateTable();
-		createTable.createTable();
-	}
 }
