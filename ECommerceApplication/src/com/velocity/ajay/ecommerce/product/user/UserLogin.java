@@ -24,13 +24,17 @@ public class UserLogin {
 			preparedStatement.setString(1, enteredUsername);
 			resultSet = preparedStatement.executeQuery();
 			if (resultSet.next()) {
+				String databaseUsername = resultSet.getString("username");
 				String databasePassword = resultSet.getString("password");
-				if (enteredPassword.equals(databasePassword)) {
-					System.out.println("Login Successfull");
+				if (enteredUsername.equals(databaseUsername)) {
+					if (enteredPassword.equals(databasePassword)) {
+						System.out.println("Login Successfull");
+					}
 				} else {
 					System.out.println("You are not Registered!!! To continue Register with E-Commerce Application");
-
 				}
+			} else {
+				System.out.println("You are not Registered!!! To continue Register with E-Commerce Application");
 			}
 
 		} catch (SQLException e) {
@@ -42,4 +46,9 @@ public class UserLogin {
 		}
 	}
 
+	public static void main(String[] args) throws SQLException {
+
+		UserLogin login = new UserLogin();
+		login.loginUser();
+	}
 }

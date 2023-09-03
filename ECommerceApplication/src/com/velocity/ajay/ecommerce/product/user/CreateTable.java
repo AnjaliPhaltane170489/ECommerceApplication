@@ -29,4 +29,9 @@ public class CreateTable {
 		}
 	}
 
+	public static void main(String[] args) throws SQLException {
+
+		CreateTable createTable = new CreateTable();
+		createTable.createTable();
+	}
 }
